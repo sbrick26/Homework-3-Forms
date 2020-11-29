@@ -7,7 +7,15 @@ Compliments Results
 {% block content %}
 
 <!-- Your HTML code goes here! -->
-
-
+<p>Hello {{name}}!</p>
+{% if wants == "yes" %}
+<ul>
+    {% for word in list %}
+      <li>
+         {{word}}
+      </li>
+    {% endfor %}
+</ul>
+{% endif %}
 
 {% endblock %}
